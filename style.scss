@@ -1,1 +1,15 @@
+@import "scss/variables";
+@import "scss/header";
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  scroll-behavior: smooth;
+}
+.container{
+  width: 80%;
+  max-width: 1200px;
+}
