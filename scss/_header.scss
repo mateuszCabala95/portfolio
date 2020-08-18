@@ -2,8 +2,7 @@
   position: sticky;
   top: 0;
   background-color: $main-brand-color;
-  border-radius: 0 0 10px 10px;
-
+  @include border-radius-mix('sm');
 
   &__mobile-btn {
     position: absolute;
@@ -121,7 +120,7 @@
 
 @media screen and (min-width: 768px) {
   .header {
-    border-radius: 0 0 20px 20px;
+@include border-radius-mix('lg');
 
     &__mobile-btn {
       top: 35px;
@@ -180,7 +179,7 @@
       padding: 15px 25px;
     }
 
-    &__link:hover{
+    &__link:hover {
       border-radius: 20px;
       box-shadow: 0 0 5px $light-shadow;
     }

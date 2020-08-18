@@ -5,12 +5,17 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Here you can found my resume, projects and contact. I work with Angular, Express and MongoDB">
+    <meta name="description"
+          content="Here you can found my resume, projects and contact. I work with Angular, Express and MongoDB">
     <title>Mateusz Cabała's Portfolio</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+          integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+          crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Roboto+Mono:wght@500;700&display=swap"
+          rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script defer src="https://kit.fontawesome.com/feee9032d1.js" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/@mojs/core"></script>
     <script defer src="script.js"></script>
 </head>
 <body>
@@ -25,18 +30,21 @@
     </nav>
 
 
-
     <div class="header__mobile-btn">
         <div class="header__burger"></div>
     </div>
 
 
 </header>
-
-
-
-
-<section id="about"></section>
+<section id="about" class="about">
+        <h1 class="about__name">Mateusz Cabała</h1>
+        <p class="about__job-position">Frontend developer with Angular</p>
+    <div class="about__my-description">
+Hello, my name is <span class="about__important">Mateusz</span>. <br>
+        In 2019 I graduated Cracow University of Technology. <br>
+        Now I'm looking opportunity to develop my skills.
+    </div>
+</section>
 <section id="skills"></section>
 <section id="projects"></section>
 <section id="contact"></section>
