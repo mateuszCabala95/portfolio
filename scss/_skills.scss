@@ -1,0 +1,72 @@
+.border{
+  width: 100%;
+  height: 10px;
+  border-radius: 0 0 10px 10px;
+  background-color: white;
+  //margin-top: -25px;
+}
+
+.skills{
+  position: relative;
+  z-index: -10;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: -10px; //@mq 768px = 25px
+  padding-top: 25px;
+  box-shadow: 0 0 5px $light-accent;
+
+  color:rgba(white, 0.85);
+  @include border-radius-mix('sm');
+
+
+  h2{
+    padding: 20px 0;
+    font-size: 2em;
+
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, $dark-accent, $main-brand-color,#ee7752, #e73c7e,);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+
+    font-family: $primary-font;
+  }
+
+  h3{
+    padding: 25px 0;
+    font-family: $secondary-font;
+    color: $dark-shadow;
+  }
+
+  &__list{
+    color: $dark-accent;
+    font-family: $primary-font;
+  }
+
+
+}
+
+@media screen  and (min-width: 768px){
+  .skills{
+    @include border-radius-mix('lg');
+  }
+
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}

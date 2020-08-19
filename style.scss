@@ -1,16 +1,14 @@
-@import "scss/variables";
-@import "scss/mixins";
-@import "scss/header";
-@import "scss/about";
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
+html{
   scroll-behavior: smooth;
 }
-.container{
-  width: 80%;
-  max-width: 1200px;
-}
+
+@import "scss/variables";
+@import "scss/mixins";
+@import "scss/header";
+@import "scss/about";
+@import "scss/skills";

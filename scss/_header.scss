@@ -1,8 +1,9 @@
 .header {
   position: sticky;
   top: 0;
-  background-color: $main-brand-color;
-  @include border-radius-mix('sm');
+  background-color: rgba($main-brand-color, 0.85);
+z-index: 20;
+
 
   &__mobile-btn {
     position: absolute;
@@ -120,7 +121,7 @@
 
 @media screen and (min-width: 768px) {
   .header {
-@include border-radius-mix('lg');
+//@include border-radius-mix('lg');
 
     &__mobile-btn {
       top: 35px;

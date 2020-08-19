@@ -27,8 +27,10 @@ const MoJSShape = {
     init: () => {
         window.addEventListener('click', (e) => {
             MoJSShape.sparksShape.tune({
-                x: e.clientX,
-                y: e.clientY,
+                x: e.pageX,
+
+                y: e.pageY,
+
             })
                 .replay()
                 .generate();
