@@ -8,10 +8,11 @@
 
   margin-top: -10px; //@mq 768px = 25px
   padding-top: 25px;
-  box-shadow: 0 0 5px $light-accent;
+  box-shadow: 0 0 5px $dark-accent;
 
   color: rgba(white, 0.85);
   @include border-radius-mix('sm');
+  background-color: #fff;
 
 
   h2 {

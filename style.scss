@@ -6,9 +6,14 @@
 html{
   scroll-behavior: smooth;
 }
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
 
 @import "scss/variables";
 @import "scss/mixins";
 @import "scss/header";
 @import "scss/about";
 @import "scss/skills";
+@import "scss/projects";

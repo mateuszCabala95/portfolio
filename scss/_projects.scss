@@ -1,0 +1,137 @@
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  @include border-radius-mix('sm');
+  box-shadow: 0 0 5px  $dark-accent;
+  margin-top: -25px;
+
+  &__header {
+    width: 100%;
+    text-align: center;
+
+    margin-top: 25px;
+    padding: 20px 0;
+    font-size: 3em;
+
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, $dark-accent, $main-brand-color, #ee7752, #e73c7e,);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+  }
+
+
+}
+
+
+.card {
+  width: 100%;
+  max-width: 350px;
+  margin: 25px 5px;
+
+  background-color: $light-shadow;
+  box-shadow: 0 0 5px $dark-shadow;
+
+
+  border-radius: 5px;
+
+
+  h4 {
+    margin: 15px;
+    font-family: $primary-font;
+  }
+
+  &__title {
+    font-family: $secondary-font;
+    text-align: center;
+    padding: 15px 0;
+    @include border-radius-mix('sm');
+    box-shadow: 0 2px 2px $dark-shadow;
+  }
+
+  &__body {
+    margin-top: 5px;
+    display: block;
+    transform-origin: 0 0;
+    width: 100%;
+    height: 200px;
+
+    background: url("./assets/CRUD_JSONPlaceholder.png");
+
+    overflow: hidden;
+
+    border-radius: 5px;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 25px 0;
+  }
+
+  &__description {
+    margin: 0 15px;
+    font-family: $primary-font;
+    line-height: 1.6em;
+  }
+
+  &__link {
+    background-color: rgba($dark-accent, 0.7);
+    color: white;
+    text-decoration: none;
+    width: 33%;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px;
+    transition: all 0.2s ease;
+  }
+
+  &__link:hover {
+    background-color: rgba($dark-accent, 1);
+  }
+}
+
+
+.stack {
+  margin: 15px;
+  list-style: none;
+
+  &__item {
+    font-family: $primary-font;
+    line-height: 200%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .projects {
+    @include border-radius-mix('lg');
+
+    &__header {
+      font-size: 4em;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1200px) {
+
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+
