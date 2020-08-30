@@ -17,7 +17,7 @@ html {
   position: sticky;
   top: 0;
   background-color: rgba(107, 152, 185, 0.85);
-  z-index: 30;
+  z-index: 100;
 }
 .header__mobile-btn {
   position: absolute;
@@ -152,12 +152,11 @@ html {
   }
   .nav__link:hover {
     border-radius: 20px;
-    box-shadow: 0 0 5px #F2F6F7;
   }
 }
 .about {
   position: relative;
-  z-index: 20;
+  z-index: 90;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -234,7 +233,7 @@ html {
 }
 .skills {
   position: relative;
-  z-index: 10;
+  z-index: 80;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -253,7 +252,6 @@ html {
   background-image: linear-gradient(45deg, #30A6DE, #6B98B9, #ee7752, #e73c7e);
   background-size: 400% 400%;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   animation: gradient 5s ease infinite;
@@ -324,6 +322,9 @@ html {
   border-radius: 0 0 10px 10px;
   box-shadow: 0 0 5px #30A6DE;
   margin-top: -25px;
+  background-color: #fff;
+  position: relative;
+  z-index: 70;
 }
 .projects__header {
   width: 100%;
@@ -335,7 +336,6 @@ html {
   background-image: linear-gradient(45deg, #30A6DE, #6B98B9, #ee7752, #e73c7e);
   background-size: 400% 400%;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
   -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
   animation: gradient 5s ease infinite;
@@ -410,6 +410,139 @@ html {
   }
   .projects__header {
     font-size: 4em;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+.contact {
+  border-radius: 0 0 10px 10px;
+  box-shadow: 0 0 5px #30A6DE;
+  position: relative;
+  z-index: 60;
+  margin-top: -10px;
+  display: grid;
+  grid-template-areas: "header" "form" "socials";
+}
+.contact__header {
+  grid-area: header;
+  width: 100%;
+  text-align: center;
+  margin-top: 25px;
+  padding: 20px 0;
+  font-size: 3em;
+  background-color: #f3ec78;
+  background-image: linear-gradient(45deg, #30A6DE, #6B98B9, #ee7752, #e73c7e);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  animation: gradient 5s ease infinite;
+}
+
+.form {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: rgba(43, 63, 99, 0.5);
+  margin: 0 auto;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #6B98B9;
+}
+.form__label {
+  font-family: "Lato", sans-serif;
+  margin: 5px 0;
+}
+.form__field {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0 0 2px #30A6DE;
+}
+.form button {
+  width: 66%;
+  max-width: 250px;
+  margin: 25px 0;
+  transform: scale(0.8);
+  border: 2px solid #2B3F63;
+  box-shadow: 0 0 5px #2B3F63;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 5px 10px;
+  font-family: "Lato", sans-serif;
+  transition: 0.3s linear;
+}
+.form button:active {
+  transform: scale(1);
+}
+
+.socials-list {
+  grid-area: socials;
+  margin: 25px auto;
+  list-style: none;
+  width: 80%;
+}
+.socials-list__item {
+  text-align: center;
+  background-color: rgba(107, 152, 185, 0.85);
+  margin: 5px auto;
+  padding: 5px;
+  border-radius: 15px;
+  line-height: 2em;
+}
+.socials-list__item a {
+  text-decoration: none;
+  color: white;
+  font-family: "Lato", sans-serif;
+  margin: 0 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .contact__header {
+    font-size: 4em;
+  }
+
+  .form__label {
+    margin: 10px 0;
+  }
+  .form__field {
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px #30A6DE;
+  }
+  .form button {
+    margin: 35px -25px;
+    padding: 10px 15px;
+    font-size: 1.4em;
+  }
+
+  .socials-list__item {
+    margin: 10px auto;
+    padding: 15px;
+    border-radius: 20px;
+  }
+  .socials-list__item span {
+    font-family: "Lato", sans-serif;
+    font-size: 1.2em;
+  }
+  .socials-list a {
+    font-size: 1.2em;
+    margin: 0 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact {
+    grid-template-areas: "header header header" "socials form form";
   }
 }
 @keyframes gradient {

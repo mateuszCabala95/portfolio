@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="BranchesTreeState">
     <expand>
       <path>
@@ -10,13 +13,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fd42c9aa-1dd1-4a86-8127-5df0dd4a7e97" name="Default Changelist" comment="Add section Skills">
-      <change afterPath="$PROJECT_DIR$/assets/CRUD_JSONPlaceholder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scss/_projects.scss" afterDir="false" />
+    <list default="true" id="fd42c9aa-1dd1-4a86-8127-5df0dd4a7e97" name="Default Changelist" comment="Add section Projects">
+      <change afterPath="$PROJECT_DIR$/assets/portfolio.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scss/_contact.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_about.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_header.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_header.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_projects.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_projects.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/_skills.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_skills.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/_variables.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/style.css.map" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/style.scss" afterDir="false" />
@@ -38,6 +44,12 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="MacroExpansionManager">
     <option name="directoryName" value="x3owqvf4" />
   </component>
@@ -58,7 +70,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/assets" />
     <property name="list.type.of.created.stylesheet" value="SCSS" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="watcher.settings" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -88,7 +100,12 @@
       <workItem from="1598041630878" duration="14124000" />
       <workItem from="1598111860862" duration="10701000" />
       <workItem from="1598135356966" duration="1579000" />
-      <workItem from="1598176596402" duration="1459000" />
+      <workItem from="1598176596402" duration="11977000" />
+      <workItem from="1598198375364" duration="3375000" />
+      <workItem from="1598294218776" duration="11443000" />
+      <workItem from="1598780599847" duration="11000" />
+      <workItem from="1598785567175" duration="1204000" />
+      <workItem from="1598789581961" duration="7323000" />
     </task>
     <task id="LOCAL-00001" summary="Add About section">
       <created>1597763682611</created>
@@ -104,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1598080896516</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add section Projects">
+      <created>1598178202630</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1598178202631</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,24 +150,25 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Add About section" />
     <MESSAGE value="Add section Skills" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add section Skills" />
+    <MESSAGE value="Add section Projects" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add section Projects" />
   </component>
   <component name="WindowStateProjectService">
     <state x="350" y="145" key="EditFileWatcherDialog" timestamp="1597510746850">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="350" y="145" key="EditFileWatcherDialog/0.0.1366.738/1366.0.1680.1020@0.0.1366.738" timestamp="1597510746850" />
-    <state x="184" y="0" key="SettingsEditor" timestamp="1597694838259">
+    <state x="184" y="0" key="SettingsEditor" timestamp="1598190813628">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="184" y="0" key="SettingsEditor/0.0.1366.738/1366.0.1680.1020@0.0.1366.738" timestamp="1597694838259" />
+    <state x="184" y="0" key="SettingsEditor/0.0.1366.738/1366.0.1680.1020@0.0.1366.738" timestamp="1598190813628" />
     <state x="339" y="159" key="run.anything.popup" timestamp="1597577191326">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="339" y="159" key="run.anything.popup/0.0.1366.738/1366.0.1680.1020@0.0.1366.738" timestamp="1597577191326" />
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1598090194352">
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup" timestamp="1598792908815">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
-    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738/1366.0.1680.1020@0.0.1366.738" timestamp="1598090194352" />
+    <state x="346" y="59" width="672" height="678" key="search.everywhere.popup/0.0.1366.738/1366.0.1680.1020@0.0.1366.738" timestamp="1598792908815" />
   </component>
 </project>

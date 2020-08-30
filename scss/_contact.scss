@@ -1,0 +1,180 @@
+.contact {
+  @include border-radius-mix('sm');
+  box-shadow: 0 0 5px $dark-accent;
+  position: relative;
+  z-index: 60;
+  margin-top: -10px;
+  display: grid;
+  grid-template-areas:
+          "header"
+          "form"
+          "socials";
+
+
+  &__header {
+    grid-area: header;
+
+    width: 100%;
+    text-align: center;
+
+    margin-top: 25px;
+    padding: 20px 0;
+    font-size: 3em;
+
+
+    background-color: #f3ec78;
+    background-image: linear-gradient(45deg, $dark-accent, $main-brand-color, #ee7752, #e73c7e,);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    animation: gradient 5s ease infinite;
+  }
+
+
+}
+
+.form {
+  grid-area: form;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  background-color: rgba($dark-shadow, 0.5);
+  margin: 0 auto;
+  padding: 15px;
+
+  border-radius: 5px;
+  box-shadow: 0 0 5px $main-brand-color;
+
+  &__label {
+    font-family: $primary-font;
+    margin: 5px 0;
+  }
+
+  &__field {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 2px $dark-accent;
+  }
+
+  button {
+    width: 66%;
+    max-width: 250px;
+    margin: 25px 0;
+    transform: scale(0.8);
+
+    border: 2px solid $dark-shadow;
+    box-shadow: 0 0 5px $dark-shadow;
+    border-radius: 5px;
+
+    background-color: #fff;
+    padding: 5px 10px;
+    font-family: $primary-font;
+
+    transition: 0.3s linear;
+  }
+
+
+  button:active {
+    transform: scale(1);
+  }
+}
+
+.socials-list {
+  grid-area: socials;
+  margin: 25px auto;
+
+  list-style: none;
+  width: 80%;
+
+  &__item {
+    text-align: center;
+
+    background-color: rgba($main-brand-color, 0.85);
+
+
+    margin: 5px auto;
+    padding: 5px;
+    border-radius: 15px;
+
+    line-height: 2em;
+
+
+    a {
+      text-decoration: none;
+      color: white;
+      font-family: $primary-font;
+      margin: 0 15px;
+    }
+
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+  .contact {
+    &__header {
+      font-size: 4em;
+    }
+  }
+
+
+  .form {
+    &__label {
+      margin: 10px 0;
+    }
+
+    &__field {
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px $dark-accent;
+    }
+
+    button {
+      margin: 35px -25px;
+      padding: 10px 15px;
+      font-size: 1.4em;
+    }
+
+
+  }
+  .socials-list {
+    &__item {
+      margin: 10px auto;
+      padding: 15px;
+      border-radius: 20px;
+
+      span {
+        font-family: $primary-font;
+        font-size: 1.2em;
+      }
+    }
+
+    a {
+      font-size: 1.2em;
+      margin: 0 20px;
+    }
+
+  }
+}
+
+@media screen and (min-width: 1200px){
+  .contact {
+    grid-template-areas:
+          "header header header"
+          "socials form form"
+  }
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
