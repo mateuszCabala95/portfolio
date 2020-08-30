@@ -1,0 +1,16 @@
+.footer{
+  height: 100px;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &__heart{
+    color: red;
+    padding: 0 5px;
+  }
+
+  background-color: $light-shadow;
+  border-radius: 5px 5px 0 0;
+}
