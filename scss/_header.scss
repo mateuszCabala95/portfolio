@@ -4,7 +4,6 @@
   background-color: rgba($main-brand-color, 0.85);
   z-index: 100;
 
-
   &__mobile-btn {
     position: absolute;
     top: 30px;
@@ -181,6 +180,7 @@
 
     &__link:hover {
       border-radius: 20px;
+      box-shadow: 0 0 5px $light-shadow;
     }
   }
 }

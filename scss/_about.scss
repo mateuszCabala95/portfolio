@@ -7,10 +7,9 @@
   justify-content: center;
   align-items: center;
   background-size: cover;
-  background: url("assets/cloud_compress.jpg");
-  background-position: bottom center;
+  background: url("assets/cloud_compress.jpg") bottom center;
   box-shadow: 0 2px 10px $main-brand-color;
-  @include border-radius-mix('sm');
+  @include border-radius-mix();
 
 
   &__name {
@@ -58,7 +57,7 @@
 @media screen and (min-width: 768px) {
   .about {
     flex-direction: column;
-    @include border-radius-mix('lg');
+    @include border-radius-mix();
 
 
     &__name {
