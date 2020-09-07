@@ -438,7 +438,6 @@ html {
   transform-origin: 0 0;
   width: 100%;
   height: 200px;
-  background: url("./assets/CRUD_JSONPlaceholder.png");
   overflow: hidden;
   border-radius: 5px;
 }
@@ -474,6 +473,18 @@ html {
 .stack__item {
   font-family: "Lato", sans-serif;
   line-height: 200%;
+}
+
+.crud_json {
+  background: url("./assets/CRUD_JSONPlaceholder.png");
+}
+
+.fiskars {
+  background: url("./assets/fiskars.png");
+}
+
+.meme_gen {
+  background: url("./assets/meme_generator.png");
 }
 
 .contact {
